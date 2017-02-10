@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+@media screen and (min-width: 1024px) { /* regola le dimensioni in larghezza del contenuto per schermi con risoluzione a partire dai 1024px */
+    .pagina {
+        display: block;
+        padding: 17px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .pagina:after {
+        content: ' ';
+        clear: both;
+        display: block;
+    }
+    
+    .left {
+        float: left;
+        width: 33.333%;
+        background: red;
+    }
+    
+    .center {
+        float: left;
+        width: 33.333%;
+        background: violet;
+    }
+    
+    .right {
+        float: right;
+        width: 33.333%;
+        background: blue;
+    }
+}
+
+@media screen and (max-width: 1023px) { /* regola le dimensioni in larghezza del contenuto per schermi con risoluzione inferiore ai 1024px */
+    .pagina {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    
+    .pagina:after {
+        content: ' ';
+        clear: both;
+        display: block;
+    }
+}
+
+footer {
+    border-top: 1px black solid;
+}
